@@ -1,8 +1,8 @@
-#  Didomi - iOS App Sample (Swift)
+#  Didomi - iOS Sample App (Swift)
 
 ## Description
 
-**This app sample demonstrates how to implement Didomi in a simple Xcode project using Swift.**
+**This sample app demonstrates how to implement Didomi in a simple Xcode project using Swift.**
 
 In particular, it shows how to:
 * Condition a custom vendor to consent

@@ -22,6 +22,7 @@ xcuserdata
 *.moved-aside
 *.xcuserstate
 *.xcscmblueprint
+*.xcworkspacedata
 
 ## Obj-C/Swift specific
 *.hmap
@@ -34,11 +35,10 @@ xcuserdata
 Carthage/Build
 
 # files used to do the cocoapods verification
-PodTests/TestProject/Podfile.lock
-PodTests/TestProject/Pods/Manifest.lock
-PodTests/XCFrameworkTestProject/Pods/
-PodTests/XCFrameworkTestProject/Podfile.lock
-PodTests/XCFrameworkTestProject/Pods/Manifest.lock
+/Podfile.
+
+# Pods
+Pods/
 
 # Swiftlint
 swiftlint.rb

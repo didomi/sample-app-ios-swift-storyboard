@@ -1,0 +1,51 @@
+# .github/workflows/scheduled-update.yml
+name: Trigger Didomi SDK Update
+
+on:
+  schedule:
+    # Runs "At 00:00 on Sunday" (see https://crontab.guru)
+    - cron: '0 0 * * SUN'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Check Didomi SDK version
+    runs-on: macos-latest
+    outputs:
+      continue: ${{ steps.check.outputs.continue }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Check Didomi SDK version
+        id: check
+        run: echo "continue=$(bash .github/scripts/check_didomi_sdk.sh)" >> $GITHUB_OUTPUT
+
+  update:
+    name: Update Didomi SDK
+    needs: [check]
+    if: ${{ needs.check.outputs.continue == 'yes' }}
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+          fetch-depth: 0 # otherwise, you will fail to push refs to dest repo
+
+      - name: Update Didomi SDK
+        run: bash .github/scripts/update_didomi_sdk.sh
+
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          author_email: "nicolas.chaix@didomi.io"
+          author_name: "Nicolas CHAIX"
+          branch: ${{ github.ref }}
+          github_token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
+          message: "Update Didomi SDK dependency"

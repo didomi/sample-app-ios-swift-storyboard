@@ -23,8 +23,8 @@
 			</array>
 		</dict>
 	</dict>
-    <key>GADDelayAppMeasurementInit</key>
-    <true/>
+	<key>GADDelayAppMeasurementInit</key>
+	<true/>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-3940256099942544~1458002511</string>
 	<key>SKAdNetworkItems</key>
@@ -37,6 +37,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>IBMPlexSans-Bold.ttf</string>
+		<string>Montserrat.ttf</string>
 	</array>
 </dict>
 </plist>

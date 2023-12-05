@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -19,42 +19,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Rre-h6-RCm">
-                                <rect key="frame" x="100" y="286" width="214.5" height="338"/>
+                                <rect key="frame" x="93.5" y="288" width="227.5" height="334"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8i-MQ-5pY">
-                                        <rect key="frame" x="0.0" y="0.0" width="214.5" height="60.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="227.5" height="59.5"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Show Preferences">
                                             <backgroundConfiguration key="background" cornerRadius="4">
-                                                <color key="backgroundColor" name="blue-5"/>
+                                                <color key="backgroundColor" name="ElectricBlue50"/>
                                             </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="14"/>
+                                            <fontDescription key="titleFontDescription" name="MontserratRoman-Medium" family="Montserrat" pointSize="14"/>
                                             <directionalEdgeInsets key="contentInsets" top="21" leading="14" bottom="21" trailing="14"/>
+                                            <color key="baseForegroundColor" name="White"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="showPreferencesPurposes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4jv-oX-rfh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIG-8Q-hcO">
-                                        <rect key="frame" x="0.0" y="92.5" width="214.5" height="60.5"/>
+                                        <rect key="frame" x="0.0" y="91.5" width="227.5" height="59.5"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Show Preferences (Vendors)">
                                             <backgroundConfiguration key="background" cornerRadius="4">
-                                                <color key="backgroundColor" name="blue-5"/>
+                                                <color key="backgroundColor" name="ElectricBlue50"/>
                                             </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="14"/>
+                                            <fontDescription key="titleFontDescription" name="MontserratRoman-Medium" family="Montserrat" pointSize="14"/>
                                             <directionalEdgeInsets key="contentInsets" top="21" leading="14" bottom="21" trailing="14"/>
+                                            <color key="baseForegroundColor" name="White"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="showPreferencesVendors:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dZ8-WV-Abo"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqe-LZ-rcl">
-                                        <rect key="frame" x="0.0" y="185" width="214.5" height="60.5"/>
+                                        <rect key="frame" x="0.0" y="183" width="227.5" height="59.5"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Show Web View">
                                             <backgroundConfiguration key="background" cornerRadius="4">
-                                                <color key="backgroundColor" name="blue-5"/>
+                                                <color key="backgroundColor" name="ElectricBlue50"/>
                                             </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="14"/>
+                                            <fontDescription key="titleFontDescription" name="MontserratRoman-Medium" family="Montserrat" pointSize="14"/>
                                             <directionalEdgeInsets key="contentInsets" top="21" leading="14" bottom="21" trailing="14"/>
+                                            <color key="baseForegroundColor" name="White"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="showPreferencesVendors:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jxA-nH-f28"/>
@@ -62,13 +65,14 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Oy-Rg-RD8">
-                                        <rect key="frame" x="0.0" y="277.5" width="214.5" height="60.5"/>
+                                        <rect key="frame" x="0.0" y="274.5" width="227.5" height="59.5"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Show Ad">
                                             <backgroundConfiguration key="background" cornerRadius="4">
-                                                <color key="backgroundColor" name="blue-5"/>
+                                                <color key="backgroundColor" name="ElectricBlue50"/>
                                             </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="14"/>
+                                            <fontDescription key="titleFontDescription" name="MontserratRoman-Medium" family="Montserrat" pointSize="14"/>
                                             <directionalEdgeInsets key="contentInsets" top="21" leading="14" bottom="21" trailing="14"/>
+                                            <color key="baseForegroundColor" name="White"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="showAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X64-mo-Fi0"/>
@@ -85,7 +89,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" name="pink-1"/>
+                        <color key="backgroundColor" name="Grey50"/>
                         <color key="tintColor" name="ButtonTextColor"/>
                         <constraints>
                             <constraint firstItem="Up4-6f-2U7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0do-n1-0b9"/>
@@ -104,7 +108,7 @@
             <objects>
                 <viewController id="22e-zx-nu2" customClass="WebViewController" customModule="Sample_App_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oao-Xg-1Ez">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="93M-9q-AfG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -116,15 +120,18 @@
         </scene>
     </scenes>
     <resources>
-        <image name="didomi_logo" width="331" height="96"/>
+        <image name="didomi_logo" width="180" height="32"/>
         <namedColor name="ButtonTextColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="blue-5">
-            <color red="0.14509803921568629" green="0.34509803921568627" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="ElectricBlue50">
+            <color red="0.1803921568627451" green="0.3843137254901961" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="pink-1">
-            <color red="1" green="0.9649999737739563" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Grey50">
+            <color red="0.97647058823529409" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

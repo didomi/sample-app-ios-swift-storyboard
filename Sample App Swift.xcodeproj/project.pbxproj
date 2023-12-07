@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A3AB3F7766280EBD383263A4 /* Pods_Sample_App_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BFFF6CF4BEA26804044FA16 /* Pods_Sample_App_Swift.framework */; };
+		BE5D9A582B1F55C900A1E883 /* Montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE5D9A572B1F55C900A1E883 /* Montserrat.ttf */; };
 		CD06DB6627E3308F002DDCA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD06DB6527E3308F002DDCA3 /* AppDelegate.swift */; };
 		CD06DB6827E3308F002DDCA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD06DB6727E3308F002DDCA3 /* SceneDelegate.swift */; };
 		CD06DB6A27E3308F002DDCA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD06DB6927E3308F002DDCA3 /* ViewController.swift */; };
@@ -16,7 +17,6 @@
 		CD06DB7227E33094002DDCA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD06DB7027E33094002DDCA3 /* LaunchScreen.storyboard */; };
 		CD55B89327EA220D00974D42 /* CustomVendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD55B89227EA220D00974D42 /* CustomVendor.swift */; };
 		CD81A51127E8AAD700BDDFA5 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD81A51027E8AAD700BDDFA5 /* Colors.xcassets */; };
-		CD81A54527E8B2DE00BDDFA5 /* IBMPlexSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD81A54427E8B2DE00BDDFA5 /* IBMPlexSans-Bold.ttf */; };
 		CDF0D8A627EB9895009FF29D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF0D8A527EB9895009FF29D /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +24,7 @@
 		1287D1C766FD07F6980F3A60 /* Pods-Sample App Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample App Swift.debug.xcconfig"; path = "Target Support Files/Pods-Sample App Swift/Pods-Sample App Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		1BFFF6CF4BEA26804044FA16 /* Pods_Sample_App_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample_App_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A61BE9873257B51E48A9DD /* Pods-Sample App Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample App Swift.release.xcconfig"; path = "Target Support Files/Pods-Sample App Swift/Pods-Sample App Swift.release.xcconfig"; sourceTree = "<group>"; };
+		BE5D9A572B1F55C900A1E883 /* Montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Montserrat.ttf; sourceTree = "<group>"; };
 		CD06DB6227E3308F002DDCA3 /* Sample App Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample App Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD06DB6527E3308F002DDCA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD06DB6727E3308F002DDCA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +36,6 @@
 		CD06DB7927E4DFEA002DDCA3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CD55B89227EA220D00974D42 /* CustomVendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVendor.swift; sourceTree = "<group>"; };
 		CD81A51027E8AAD700BDDFA5 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		CD81A54427E8B2DE00BDDFA5 /* IBMPlexSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Bold.ttf"; sourceTree = "<group>"; };
 		CDF0D8A527EB9895009FF29D /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,7 +99,7 @@
 		CD81A52527E8AEF000BDDFA5 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				CD81A54427E8B2DE00BDDFA5 /* IBMPlexSans-Bold.ttf */,
+				BE5D9A572B1F55C900A1E883 /* Montserrat.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -174,9 +174,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD06DB7227E33094002DDCA3 /* LaunchScreen.storyboard in Resources */,
-				CD81A54527E8B2DE00BDDFA5 /* IBMPlexSans-Bold.ttf in Resources */,
 				CD81A51127E8AAD700BDDFA5 /* Colors.xcassets in Resources */,
 				CD06DB6F27E33094002DDCA3 /* Assets.xcassets in Resources */,
+				BE5D9A582B1F55C900A1E883 /* Montserrat.ttf in Resources */,
 				CD06DB6D27E3308F002DDCA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,7 +382,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8LRRZ9BDN5;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Sample App Swift/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -412,7 +412,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8LRRZ9BDN5;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Sample App Swift/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

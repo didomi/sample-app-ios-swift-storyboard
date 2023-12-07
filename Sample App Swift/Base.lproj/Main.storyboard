@@ -81,10 +81,10 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="didomi_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Up4-6f-2U7">
-                                <rect key="frame" x="143" y="800" width="128" height="38"/>
+                                <rect key="frame" x="139.5" y="814" width="135" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="8BY-DA-NeO"/>
-                                    <constraint firstAttribute="width" constant="128" id="BYI-GF-yhf"/>
+                                    <constraint firstAttribute="height" constant="24" id="8BY-DA-NeO"/>
+                                    <constraint firstAttribute="width" constant="135" id="BYI-GF-yhf"/>
                                 </constraints>
                             </imageView>
                         </subviews>

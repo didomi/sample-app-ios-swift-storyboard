@@ -1,76 +1,24 @@
 PODS:
-  - Didomi-XCFramework (1.95.2)
-  - Google-Mobile-Ads-SDK (10.14.0):
-    - GoogleAppMeasurement (< 11.0, >= 7.0)
+  - Didomi-XCFramework (2.11.1)
+  - Google-Mobile-Ads-SDK (11.8.0):
     - GoogleUserMessagingPlatform (>= 1.1)
-  - GoogleAppMeasurement (10.18.0):
-    - GoogleAppMeasurement/AdIdSupport (= 10.18.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
-    - GoogleUtilities/MethodSwizzler (~> 7.11)
-    - GoogleUtilities/Network (~> 7.11)
-    - "GoogleUtilities/NSData+zlib (~> 7.11)"
-    - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleAppMeasurement/AdIdSupport (10.18.0):
-    - GoogleAppMeasurement/WithoutAdIdSupport (= 10.18.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
-    - GoogleUtilities/MethodSwizzler (~> 7.11)
-    - GoogleUtilities/Network (~> 7.11)
-    - "GoogleUtilities/NSData+zlib (~> 7.11)"
-    - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleAppMeasurement/WithoutAdIdSupport (10.18.0):
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
-    - GoogleUtilities/MethodSwizzler (~> 7.11)
-    - GoogleUtilities/Network (~> 7.11)
-    - "GoogleUtilities/NSData+zlib (~> 7.11)"
-    - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleUserMessagingPlatform (2.1.0)
-  - GoogleUtilities/AppDelegateSwizzler (7.12.0):
-    - GoogleUtilities/Environment
-    - GoogleUtilities/Logger
-    - GoogleUtilities/Network
-  - GoogleUtilities/Environment (7.12.0):
-    - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/Logger (7.12.0):
-    - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (7.12.0):
-    - GoogleUtilities/Logger
-  - GoogleUtilities/Network (7.12.0):
-    - GoogleUtilities/Logger
-    - "GoogleUtilities/NSData+zlib"
-    - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (7.12.0)"
-  - GoogleUtilities/Reachability (7.12.0):
-    - GoogleUtilities/Logger
-  - nanopb (2.30909.1):
-    - nanopb/decode (= 2.30909.1)
-    - nanopb/encode (= 2.30909.1)
-  - nanopb/decode (2.30909.1)
-  - nanopb/encode (2.30909.1)
-  - PromisesObjC (2.3.1)
+  - GoogleUserMessagingPlatform (2.5.0)
 
 DEPENDENCIES:
-  - Didomi-XCFramework (= 1.95.2)
+  - Didomi-XCFramework (= 2.11.1)
   - Google-Mobile-Ads-SDK
 
 SPEC REPOS:
   trunk:
     - Didomi-XCFramework
     - Google-Mobile-Ads-SDK
-    - GoogleAppMeasurement
     - GoogleUserMessagingPlatform
-    - GoogleUtilities
-    - nanopb
-    - PromisesObjC
 
 SPEC CHECKSUMS:
-  Didomi-XCFramework: 6bf68d6f8c9162bb28cf19b1a56b1dfceb657b42
-  Google-Mobile-Ads-SDK: 8f67a72f88d057335b1ac3f501e2b68ad054116e
-  GoogleAppMeasurement: 70ce9aa438cff1cfb31ea3e660bcc67734cb716e
-  GoogleUserMessagingPlatform: dce302b8f1b84d6e945812ee7a15c3f65a102cbf
-  GoogleUtilities: 0759d1a57ebb953965c2dfe0ba4c82e95ccc2e34
-  nanopb: d4d75c12cd1316f4a64e3c6963f879ecd4b5e0d5
-  PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
+  Didomi-XCFramework: 02c1454326e1968decb0c404db8a2666b10cad8f
+  Google-Mobile-Ads-SDK: c1c53687b572122c5b0bdaf354335bbf40fd81ef
+  GoogleUserMessagingPlatform: 6b4f48a370e77ce121d034c908cc6ee4fdafaf13
 
-PODFILE CHECKSUM: 72fb013ef4e1845b0c95a7bb599ab3badc843e9e
+PODFILE CHECKSUM: fa07efca9a21ef90354bce9347cc4bc9928df9a8
 
-COCOAPODS: 1.13.0
+COCOAPODS: 1.15.2

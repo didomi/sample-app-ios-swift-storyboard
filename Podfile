@@ -6,6 +6,6 @@ target 'Sample App Swift' do
   use_frameworks!
 
   # Pods for Sample App Swift
-  pod 'Didomi-XCFramework', '2.26.1'
+  pod 'Didomi-XCFramework', '2.26.3'
   pod 'Google-Mobile-Ads-SDK'
 end

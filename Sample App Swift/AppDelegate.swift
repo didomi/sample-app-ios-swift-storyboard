@@ -35,7 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             // Load your custom vendors in the onReady callback.
             // These vendors need to be conditioned manually to the consent status of the user.
-            self?.loadVendor()
+            Task { @MainActor in
+                self?.loadVendor()
+            }
         }
         
         // Load the IAB vendors; the consent status will be shared automatically with them.
@@ -50,8 +52,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let vendorId = "c:customven-gPVkJxXD"
         let didomi = Didomi.shared
-        let status = didomi.getUserStatus()
-        let isVendorEnabled = status.vendors.global.enabled.contains(vendorId)
+        let status = didomi.getCurrentUserStatus()
+        let isVendorEnabled = status.vendors[vendorId]?.enabled ?? false
         
         // Remove any existing event listener
         if let eventListener = didomiEventListener {

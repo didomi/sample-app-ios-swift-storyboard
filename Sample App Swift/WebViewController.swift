@@ -32,9 +32,11 @@ class WebViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
         
         // Inject consent information into the web view
         Didomi.shared.onReady { [weak self] in
-            let string = Didomi.shared.getJavaScriptForWebView()
-            let script = WKUserScript(source: string, injectionTime: .atDocumentStart, forMainFrameOnly: false)
-            self?.webView.configuration.userContentController.addUserScript(script)
+            Task { @MainActor in
+                let string = Didomi.shared.getJavaScriptForWebView()
+                let script = WKUserScript(source: string, injectionTime: .atDocumentStart, forMainFrameOnly: false)
+                self?.webView.configuration.userContentController.addUserScript(script)
+            }
         }
     }
 }

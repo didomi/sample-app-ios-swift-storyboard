@@ -54,14 +54,16 @@ class ViewController: UIViewController, GADFullScreenContentDelegate {
         super.viewDidLoad()
         
         Didomi.shared.onReady {
-            self.loadAd()
-            
-            let didomiEventListener = EventListener()
-            didomiEventListener.onConsentChanged = { event in
-                // The consent status of the user has changed
+            Task { @MainActor in
                 self.loadAd()
+                
+                let didomiEventListener = EventListener()
+                didomiEventListener.onConsentChanged = { event in
+                    // The consent status of the user has changed
+                    self.loadAd()
+                }
+                Didomi.shared.addEventListener(listener: didomiEventListener)
             }
-            Didomi.shared.addEventListener(listener: didomiEventListener)
         }
     }
     

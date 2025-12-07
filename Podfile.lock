@@ -1,11 +1,11 @@
 PODS:
-  - Didomi-XCFramework (2.33.1)
+  - Didomi-XCFramework (2.34.0)
   - Google-Mobile-Ads-SDK (11.13.0):
     - GoogleUserMessagingPlatform (>= 1.1)
   - GoogleUserMessagingPlatform (3.1.0)
 
 DEPENDENCIES:
-  - Didomi-XCFramework (= 2.33.1)
+  - Didomi-XCFramework (= 2.34.0)
   - Google-Mobile-Ads-SDK (= 11.13.0)
 
 SPEC REPOS:
@@ -15,10 +15,10 @@ SPEC REPOS:
     - GoogleUserMessagingPlatform
 
 SPEC CHECKSUMS:
-  Didomi-XCFramework: aa1b61db571949d9932df3b804c3d1c33cd7d283
+  Didomi-XCFramework: 671c92122f40c407fc0d24f101c27c898ac83a61
   Google-Mobile-Ads-SDK: 14f57f2dc33532a24db288897e26494640810407
   GoogleUserMessagingPlatform: befe603da6501006420c206222acd449bba45a9c
 
-PODFILE CHECKSUM: 17f1699da474e2865dc0f8ae25bff3b48fc34a27
+PODFILE CHECKSUM: 1086248cfb35e5efda8c36b65752ff32658ba6b3
 
 COCOAPODS: 1.16.2

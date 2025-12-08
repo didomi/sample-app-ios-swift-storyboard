@@ -50,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func loadVendor() {
         
-        let vendorId = "c:customven-gPVkJxXD"
+        let vendorId = "customven-gPVkJxXD"
         let didomi = Didomi.shared
         let status = didomi.getCurrentUserStatus()
         let isVendorEnabled = status.vendors[vendorId]?.enabled ?? false
